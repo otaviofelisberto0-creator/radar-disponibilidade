@@ -1,0 +1,34 @@
+# Bases locais e dados brutos
+*.xlsx
+*.xls
+*.csv
+
+# Downloads e exportações fora da pasta de dados
+/radar-*.json
+/*.json
+
+# Temporários e cópias de trabalho
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.log
+
+# Arquivos compactados e relatórios locais
+*.zip
+*.7z
+*.rar
+/validation*
+/test*
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Dependências locais não necessárias para o site estático
+node_modules/
