@@ -1,11 +1,43 @@
 {
   "versao": 1,
-  "ultimaAtualizacao": "2026-10-01",
-  "arquivoAtual": "radar-2026-10-01.json",
+  "ultimaAtualizacao": "2026-10-09",
+  "arquivoAtual": "radar-2026-10-09.json",
   "bases": [
     {
       "data": "2026-10-01",
       "arquivo": "radar-2026-10-01.json"
+    },
+    {
+      "data": "2026-10-02",
+      "arquivo": "radar-2026-10-02.json"
+    },
+    {
+      "data": "2026-10-03",
+      "arquivo": "radar-2026-10-03.json"
+    },
+    {
+      "data": "2026-10-04",
+      "arquivo": "radar-2026-10-04.json"
+    },
+    {
+      "data": "2026-10-05",
+      "arquivo": "radar-2026-10-05.json"
+    },
+    {
+      "data": "2026-10-06",
+      "arquivo": "radar-2026-10-06.json"
+    },
+    {
+      "data": "2026-10-07",
+      "arquivo": "radar-2026-10-07.json"
+    },
+    {
+      "data": "2026-10-08",
+      "arquivo": "radar-2026-10-08.json"
+    },
+    {
+      "data": "2026-10-09",
+      "arquivo": "radar-2026-10-09.json"
     }
   ]
 }
