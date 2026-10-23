@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "ultimaAtualizacao": "2026-10-22",
-  "arquivoAtual": "radar-2026-10-22.json",
+  "ultimaAtualizacao": "2026-10-23",
+  "arquivoAtual": "radar-2026-10-23.json",
   "bases": [
     {
       "data": "2026-10-01",
@@ -66,6 +66,10 @@
     {
       "data": "2026-10-22",
       "arquivo": "radar-2026-10-22.json"
+    },
+    {
+      "data": "2026-10-23",
+      "arquivo": "radar-2026-10-23.json"
     }
   ]
 }
