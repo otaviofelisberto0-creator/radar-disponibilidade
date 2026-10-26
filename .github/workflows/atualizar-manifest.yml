@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "dados/*.json"
+      - "dados/radar-*.json"
+      - "dados/backlog-*.json"
       - "!dados/manifest.json"
   workflow_dispatch:
 
@@ -19,19 +20,87 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Atualizar manifesto
-        run: node scripts/atualizar-manifest.js
+      - name: Gerar manifest.json
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
 
-      - name: Salvar manifesto
+          const dadosDir = path.join(process.cwd(), 'dados');
+          if (!fs.existsSync(dadosDir)) {
+            throw new Error('Pasta dados não encontrada.');
+          }
+
+          const files = fs.readdirSync(dadosDir);
+
+          function collect(prefix) {
+            const rx = new RegExp(`^${prefix}-(\\d{4}-\\d{2}-\\d{2})\\.json$`);
+            return files
+              .map(arquivo => {
+                const m = arquivo.match(rx);
+                return m ? { data: m[1], arquivo } : null;
+              })
+              .filter(Boolean)
+              .sort((a, b) => a.data.localeCompare(b.data));
+          }
+
+          const bases = collect('radar');
+          const basesBacklog = collect('backlog');
+
+          if (!bases.length) {
+            throw new Error('Nenhum arquivo dados/radar-AAAA-MM-DD.json encontrado.');
+          }
+
+          const radarAtual = bases[bases.length - 1];
+          const backlogAtual = basesBacklog.length
+            ? basesBacklog[basesBacklog.length - 1]
+            : null;
+
+          const manifest = {
+            versao: 2,
+            ultimaAtualizacao: radarAtual.data,
+            arquivoAtual: radarAtual.arquivo,
+            backlog: backlogAtual
+              ? {
+                  ultimaAtualizacao: backlogAtual.data,
+                  arquivoAtual: backlogAtual.arquivo
+                }
+              : {
+                  ultimaAtualizacao: null,
+                  arquivoAtual: null
+                },
+            bases,
+            basesBacklog
+          };
+
+          fs.writeFileSync(
+            path.join(dadosDir, 'manifest.json'),
+            JSON.stringify(manifest, null, 2) + '\n',
+            'utf8'
+          );
+
+          console.log(`Radar: ${bases.length} base(s), atual ${radarAtual.arquivo}`);
+          console.log(
+            backlogAtual
+              ? `Backlog: ${basesBacklog.length} base(s), atual ${backlogAtual.arquivo}`
+              : 'Backlog: nenhuma base publicada.'
+          );
+          NODE
+
+      - name: Commit do manifest atualizado
+        shell: bash
         run: |
           if git diff --quiet -- dados/manifest.json; then
-            echo "Manifesto já está atualizado."
+            echo "manifest.json já está atualizado."
             exit 0
           fi
 
