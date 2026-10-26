@@ -1,87 +1,34 @@
 {
-  "versao": 1,
+  "versao": 2,
   "ultimaAtualizacao": "2026-10-26",
   "arquivoAtual": "radar-2026-10-26.json",
+  "backlog": {
+    "ultimaAtualizacao": "2026-10-26",
+    "arquivoAtual": "backlog-2026-10-26.json"
+  },
   "bases": [
-    {
-      "data": "2026-10-01",
-      "arquivo": "radar-2026-10-01.json"
-    },
-    {
-      "data": "2026-10-02",
-      "arquivo": "radar-2026-10-02.json"
-    },
-    {
-      "data": "2026-10-03",
-      "arquivo": "radar-2026-10-03.json"
-    },
-    {
-      "data": "2026-10-04",
-      "arquivo": "radar-2026-10-04.json"
-    },
-    {
-      "data": "2026-10-05",
-      "arquivo": "radar-2026-10-05.json"
-    },
-    {
-      "data": "2026-10-06",
-      "arquivo": "radar-2026-10-06.json"
-    },
-    {
-      "data": "2026-10-07",
-      "arquivo": "radar-2026-10-07.json"
-    },
-    {
-      "data": "2026-10-08",
-      "arquivo": "radar-2026-10-08.json"
-    },
-    {
-      "data": "2026-10-09",
-      "arquivo": "radar-2026-10-09.json"
-    },
-    {
-      "data": "2026-10-14",
-      "arquivo": "radar-2026-10-14.json"
-    },
-    {
-      "data": "2026-10-15",
-      "arquivo": "radar-2026-10-15.json"
-    },
-    {
-      "data": "2026-10-16",
-      "arquivo": "radar-2026-10-16.json"
-    },
-    {
-      "data": "2026-10-19",
-      "arquivo": "radar-2026-10-19.json"
-    },
-    {
-      "data": "2026-10-20",
-      "arquivo": "radar-2026-10-20.json"
-    },
-    {
-      "data": "2026-10-21",
-      "arquivo": "radar-2026-10-21.json"
-    },
-    {
-      "data": "2026-10-22",
-      "arquivo": "radar-2026-10-22.json"
-    },
-    {
-      "data": "2026-10-23",
-      "arquivo": "radar-2026-10-23.json"
-    },
-    {
-      "data": "2026-10-24",
-      "arquivo": "radar-2026-10-24.json"
-    },
-    {
-      "data": "2026-10-25",
-      "arquivo": "radar-2026-10-25.json"
-    },
-    {
-      "data": "2026-10-26",
-      "arquivo": "radar-2026-10-26.json"
-    }
+    {"data":"2026-10-01","arquivo":"radar-2026-10-01.json"},
+    {"data":"2026-10-02","arquivo":"radar-2026-10-02.json"},
+    {"data":"2026-10-03","arquivo":"radar-2026-10-03.json"},
+    {"data":"2026-10-04","arquivo":"radar-2026-10-04.json"},
+    {"data":"2026-10-05","arquivo":"radar-2026-10-05.json"},
+    {"data":"2026-10-06","arquivo":"radar-2026-10-06.json"},
+    {"data":"2026-10-07","arquivo":"radar-2026-10-07.json"},
+    {"data":"2026-10-08","arquivo":"radar-2026-10-08.json"},
+    {"data":"2026-10-09","arquivo":"radar-2026-10-09.json"},
+    {"data":"2026-10-14","arquivo":"radar-2026-10-14.json"},
+    {"data":"2026-10-15","arquivo":"radar-2026-10-15.json"},
+    {"data":"2026-10-16","arquivo":"radar-2026-10-16.json"},
+    {"data":"2026-10-19","arquivo":"radar-2026-10-19.json"},
+    {"data":"2026-10-20","arquivo":"radar-2026-10-20.json"},
+    {"data":"2026-10-21","arquivo":"radar-2026-10-21.json"},
+    {"data":"2026-10-22","arquivo":"radar-2026-10-22.json"},
+    {"data":"2026-10-23","arquivo":"radar-2026-10-23.json"},
+    {"data":"2026-10-24","arquivo":"radar-2026-10-24.json"},
+    {"data":"2026-10-25","arquivo":"radar-2026-10-25.json"},
+    {"data":"2026-10-26","arquivo":"radar-2026-10-26.json"}
+  ],
+  "basesBacklog": [
+    {"data":"2026-10-26","arquivo":"backlog-2026-10-26.json"}
   ]
 }
