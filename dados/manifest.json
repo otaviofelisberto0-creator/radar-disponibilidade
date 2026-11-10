@@ -1,7 +1,7 @@
 {
   "versao": 2,
-  "ultimaAtualizacao": "2026-11-09",
-  "arquivoAtual": "radar-2026-11-09.json",
+  "ultimaAtualizacao": "2026-11-10",
+  "arquivoAtual": "radar-2026-11-10.json",
   "backlog": {
     "ultimaAtualizacao": "2026-11-10",
     "arquivoAtual": "backlog-2026-11-10.json"
@@ -122,6 +122,10 @@
     {
       "data": "2026-11-09",
       "arquivo": "radar-2026-11-09.json"
+    },
+    {
+      "data": "2026-11-10",
+      "arquivo": "radar-2026-11-10.json"
     }
   ],
   "basesBacklog": [
