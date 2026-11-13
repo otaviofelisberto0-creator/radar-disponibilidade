@@ -1,10 +1,10 @@
 {
   "versao": 2,
-  "ultimaAtualizacao": "2026-11-12",
-  "arquivoAtual": "radar-2026-11-12.json",
+  "ultimaAtualizacao": "2026-11-13",
+  "arquivoAtual": "radar-2026-11-13.json",
   "backlog": {
-    "ultimaAtualizacao": "2026-11-12",
-    "arquivoAtual": "backlog-2026-11-12.json"
+    "ultimaAtualizacao": "2026-11-13",
+    "arquivoAtual": "backlog-2026-11-13.json"
   },
   "bases": [
     {
@@ -134,6 +134,10 @@
     {
       "data": "2026-11-12",
       "arquivo": "radar-2026-11-12.json"
+    },
+    {
+      "data": "2026-11-13",
+      "arquivo": "radar-2026-11-13.json"
     }
   ],
   "basesBacklog": [
@@ -188,6 +192,10 @@
     {
       "data": "2026-11-12",
       "arquivo": "backlog-2026-11-12.json"
+    },
+    {
+      "data": "2026-11-13",
+      "arquivo": "backlog-2026-11-13.json"
     }
   ]
 }
